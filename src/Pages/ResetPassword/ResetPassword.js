@@ -4,6 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import { auth } from "./../../Firebase/Firebase.init";
 import "react-toastify/dist/ReactToastify.css";
 import { sendPasswordResetEmail } from "firebase/auth";
+import PageTitle from "./../Shared/PageTitle/PageTitle";
 
 const ResetPassword = () => {
   const [userInput, setUserInput] = useState({
@@ -80,6 +81,7 @@ const ResetPassword = () => {
   };
   return (
     <>
+      <PageTitle title="Password Reset" />
       <section>
         <ToastContainer
           position="top-center"

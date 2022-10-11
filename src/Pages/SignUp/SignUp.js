@@ -16,6 +16,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import formImage from "../../images/Form/Form-img-1.jpg";
 import { motion } from "framer-motion";
+import PageTitle from "../Shared/PageTitle/PageTitle";
 
 const SignUp = () => {
   const [userInput, setUserInput] = useState({
@@ -201,6 +202,7 @@ const SignUp = () => {
 
   return (
     <>
+      <PageTitle title="Signup" />
       <section className="signin-container sign-up">
         <div className="signin-card translate-right">
           <h1>Create Your Account</h1>

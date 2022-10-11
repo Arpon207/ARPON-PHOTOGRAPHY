@@ -13,6 +13,8 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import formImage from "../../images/Form/Form-img-2.jpg";
 import { motion } from "framer-motion";
+import PageTitle from "./../Shared/PageTitle/PageTitle";
+import Loading from "../Loading/Loading";
 
 const SignIn = () => {
   const [userInput, setUserInput] = useState({
@@ -106,6 +108,10 @@ const SignIn = () => {
     }
   }, [user]);
 
+  if (loading) {
+    return <Loading />;
+  }
+
   const formAnimate = {
     hidden: {
       opacity: 0,
@@ -159,6 +165,7 @@ const SignIn = () => {
 
   return (
     <>
+      <PageTitle title="Signin" />
       <section className="background">
         <div className="signin-container">
           <div>

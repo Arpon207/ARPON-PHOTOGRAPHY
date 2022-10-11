@@ -1,4 +1,5 @@
 import React from "react";
+import PageTitle from "../../Shared/PageTitle/PageTitle";
 import Banner from "../Banner/Banner";
 import Gears from "../Gears/Gears";
 import Packages from "../Packages/Packages";
@@ -10,6 +11,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <>
+      <PageTitle title={"Home"} />
       <div>
         <Banner />
         <Services />
