@@ -1,0 +1,35 @@
+[
+    {
+        "title" : "Standard",
+        "price" : 99,
+        "deals" : [
+            "1 hour session",
+            "Photoshoot in single location",
+            "20 digital images",
+            "Artistic post-editing",
+            "Online gallery"
+        ]
+    },
+    {
+        "title" : "Premium",
+        "price" : 299,
+        "deals" : [
+            "3 hour session",
+            "Photoshoot in different locations",
+            "50 digital images",
+            "Toportfolio-level artistic post-editing with complex retouching",
+            "Online gallery"
+        ]
+    },
+    {
+        "title" : "Elite",
+        "price" : 499,
+        "deals" : [
+            "10 hour session",
+            "Photoshoot in different locations",
+            "100 digital images",
+            "Toportfolio-level artistic post-editing with complex retouching",
+            "Online gallery"
+        ]
+    }
+]

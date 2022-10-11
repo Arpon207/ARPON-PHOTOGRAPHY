@@ -1,0 +1,8 @@
+/*<--------------Media Queries (Small-Devices)----------------->*/
+
+@media screen and (max-width: 668px){
+    .sign-up .signin-card{
+        order: 2;
+    }
+
+}

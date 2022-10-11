@@ -1,0 +1,137 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.popup-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.popup h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    padding-top: 3rem;
+}
+
+.popup-container {
+  height: 90vh;
+  width: 80%;
+  margin: 2rem auto;
+  background-color: white;
+
+}
+
+
+.popup-package-card {
+    border: 1px solid black;
+    padding: 2rem 0 0 0 ;
+    transition: .3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.popup-package-card button{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background: none;
+}
+
+.popup-package-card:hover {
+    border: 1px solid orange;
+}
+
+.popup-package-card ul{
+    width: 60%;
+    text-align: left;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.popup-package-card ul li{
+    margin: 1rem 0;
+    gap: .5rem;
+    display: grid;
+    grid-template-columns: 5% 95%;
+    align-items:baseline;
+}
+
+.popup-list-icon{
+    transform: translateY(.15rem);
+    margin-right: .5rem;
+}
+
+.popup-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+
+.cancel-btn{
+    color: white;
+    background-color:black ;
+    border-radius: 1rem 0 0 1rem;
+    transition: .3s;
+    font-size: 1.3rem;
+    padding: .5rem 1.5rem;
+}
+
+.next-btn{
+    border-radius: 0 1rem 1rem 0;
+    font-size: 1.3rem;
+    padding: .5rem 2.2rem;
+    transition: .3s;
+}
+
+.cancel-btn:hover{
+    color: black;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.hover:hover{
+    color: white;
+    background-color: black;
+}
+
+.active-package{
+    border: 1px solid orange;
+    transform: scale(1.05);
+}
+
+
+/*<--------------Media Queries (Small-Devices)----------------->*/
+
+@media screen and (max-width: 668px){
+    .popup-container {
+        width: 95%;
+        overflow: scroll;      
+    }
+
+    .popup h1{
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .popup-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        gap: 1rem;
+    }
+
+    .popup-buttons{
+        margin-bottom: 2rem;
+    }
+}

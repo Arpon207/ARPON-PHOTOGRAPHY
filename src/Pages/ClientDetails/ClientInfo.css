@@ -1,0 +1,93 @@
+.client-info{
+    height: 100vh;
+    margin: 5rem auto 0;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.client-info>div>p{
+    font-size: 1.3rem;
+    margin: 2rem 0;
+}
+
+.client-info form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.client-info .input-box{
+    margin-bottom: 1rem;
+}
+
+.client-info form input{
+    display: block;
+    width: 80%;
+    padding: .5rem;
+    font-size: 1.1rem;
+    border-radius: .5rem;
+    border: 1px solid gray;
+}
+
+.leaflet{
+    margin: 2rem 0 0;
+}
+
+.book-now-btn{
+    font-size: 1.5rem;
+    padding: .5rem 2rem;
+    color: white;
+    background-color: black;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    transition: .3s;
+}
+
+.book-now-btn:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.selected-event{
+    background-color: rgba(0,0,0,0.1);
+    margin: 2rem 0 0;
+    padding: 2rem;
+    height: fit-content;
+}
+
+.selected-service-card img{
+    width: 100%;
+}
+
+.selected-service-title{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/*<--------------Media Queries (Small-Devices)----------------->*/
+
+@media screen and (max-width: 668px) {
+    .client-info{
+        width: 100%;
+        height: unset;
+        grid-template-columns: 1fr;
+    }
+
+    .client-info form{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .client-info form input{
+        width: 100%;
+        padding: .5rem;
+    }
+
+    .client-info-form{
+        order: 2;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .selected-event{
+        order: 1;
+    }
+}

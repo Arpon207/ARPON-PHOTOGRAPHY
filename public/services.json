@@ -1,0 +1,46 @@
+[
+    {
+        "id" : "wedding",
+        "title" : "Wedding Photography",
+        "image" : "Images/Wedding2.jpg",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore modi, alias mollitia blanditiis asperiores tempora? Sit, earum voluptates? Nostrum sequi aliquid necessitatibus quam dolor. Sit omnis quaerat eveniet voluptatibus.",
+        "price" : {
+            "Standard" : 199,
+            "Premium" : 399,
+            "Elite" : 599
+        }
+    },
+    {
+        "id" : "engagement",
+        "title" : "Engagement Photography",
+        "image" : "Images/Engagement2.jpg",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore modi, alias mollitia blanditiis asperiores tempora? Sit, earum voluptates? Nostrum sequi aliquid necessitatibus quam dolor. Sit omnis quaerat eveniet voluptatibus.",
+        "price" : {
+            "Standard" : 159,
+            "Premium" : 259,
+            "Elite" : 359
+        }
+    },
+    {
+        "id" : "portrait",
+        "title" : "Portrait Photography",
+        "image" : "Images/Portrait2.jpg",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore modi, alias mollitia blanditiis asperiores tempora? Sit, earum voluptates? Nostrum sequi aliquid necessitatibus quam dolor. Sit omnis quaerat eveniet voluptatibus.",
+        "price" : {
+            "Standard" : 179,
+            "Premium" : 359,
+            "Elite" : 429
+        }
+    },
+    {
+        "id" : "honeymoon",
+        "title" : "Honeymoon Photography",
+        "image" : "Images/Honeymoon2.jpg",
+        "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam labore modi, alias mollitia blanditiis asperiores tempora? Sit, earum voluptates? Nostrum sequi aliquid necessitatibus quam dolor. Sit omnis quaerat eveniet voluptatibus.",
+        "price" : {
+            "Standard" : 299,
+            "Premium" : 549,
+            "Elite" : 749
+        }
+    }
+]

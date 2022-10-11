@@ -1,0 +1,42 @@
+.retouching{
+    background: linear-gradient(to bottom right, #333333, #121212);
+    margin: 0 0 4rem;
+    padding: 1rem 0;
+    color: rgba(255, 255, 255, 0.849);
+}
+
+.retouching > div{
+    width: 60%;
+    display: grid;
+    margin: 4rem auto;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.retouching img{
+    width: 100%;
+}
+
+.retouching h1{
+    font-size: 2.5rem;
+}
+
+.retouching p{
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+
+/*<--------------Media Queries (Small-Devices)----------------->*/
+
+@media screen and (max-width: 668px){
+    .retouching > div{
+        width: 80%;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .retouching h1,
+    .retouching p{
+        text-align: center;
+    }
+}

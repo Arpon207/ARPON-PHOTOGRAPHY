@@ -1,0 +1,279 @@
+.signin-container {
+  margin: 3rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  height: 100vh;
+}
+
+.signin-container img {
+  width: 100%;
+}
+
+.signin-card {
+  width: 60%;
+  padding: 2rem;
+  margin: 0 auto;
+  background-color: white;
+  z-index: 2;
+}
+
+
+.input-box {
+  width: 100%;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.visiblity-btn {
+  position: absolute;
+  right: 1rem;
+  top: 40%;
+  color: black;
+  height: 100%;
+  cursor: pointer;
+}
+
+.eye-icon {
+  font-size: 1.4rem;
+}
+
+.input-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.input-wrapper input {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  padding: 1rem 0.2rem 0.5rem;
+  border: none;
+  width: 100%;
+  border-bottom: 2px solid gray;
+  outline: none;
+}
+
+.input-wrapper label {
+  position: absolute;
+  bottom: 0.5rem;
+  z-index: 1;
+  pointer-events: none;
+  left: 0;
+  transition: all 0.3s;
+  color: gray;
+}
+
+.input-wrapper .underline {
+  position: absolute;
+  height: 2px;
+  z-index: 1;
+  background-color: black;
+  left: -100%;
+  bottom: 0rem;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.input-wrapper input:focus ~ label,
+.input-wrapper input:valid ~ label {
+  transform: translateY(-1.5rem);
+  color: black;
+  font-size: 0.9rem;
+}
+
+.input-wrapper input:focus ~ .underline {
+  left: 0;
+}
+
+.form-btns{
+  display: flex;
+  justify-content: space-between;
+}
+
+.signin-btn {
+  font-size: 1.2rem;
+  padding: 1rem 3rem;
+  margin-top: 1.5rem;
+  border-radius: .5rem;
+  background: black;
+  color: white;
+  transition: 0.3s;
+}
+
+.reset-pass-btn {
+  background: none;
+  transition: 0.3s;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.signin-btn:hover {
+  background: rgba(20, 20, 20, 0.89);
+}
+
+.signin-card > p {
+  text-align: center;
+  margin: 2rem auto 0;
+}
+
+.toggle-btn {
+  background: none;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  transition: 0.3s;
+  margin-left: 0.5rem;
+}
+
+.toggle-btn:hover,
+.reset-pass-btn:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.social-login p {
+  text-align: center;
+}
+
+.social-login div {
+  width: 45%;
+  height: 1px;
+  background-color: black;
+}
+
+.social-login-options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.social-login-options .login-btn {
+  display: inline-block;
+  background-color: black;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 6;
+}
+
+.icon-box {
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-top: .5rem;
+  color: white;
+}
+
+.login-btn span {
+  color: blue;
+  font-size: 1.5rem;
+  display: none;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+.login-btn:last-child span {
+  color: white;
+}
+
+.login-btn:hover {
+  width: 200px;
+  border-radius: 30px;
+  border: 1px solid black;
+}
+
+.login-btn:hover.login-btn span {
+  display: block;
+}
+
+.login-btn:hover.login-btn .icon-box {
+  position: absolute;
+  left: 0;
+  background-color: white;
+}
+
+.login-btn:hover.login-btn .icon-box .icon {
+  color: blue;
+}
+
+.login-btn:hover.login-btn .github {
+  position: absolute;
+  left: 0;
+  background-color: white;
+}
+
+.login-btn:hover.login-btn .github .icon {
+  color: black;
+}
+
+.login-btn:hover.login-btn .icon {
+  color: white;
+}
+
+.login-btn:hover.login-btn:nth-child(1) {
+  background-color: white;
+}
+
+.login-btn:hover .icon-box {
+  border: 1px solid black;
+}
+
+.error-message {
+  color: red;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+
+/*<--------------Media Queries (Small-Devices)----------------->*/
+
+@media screen and (max-width: 668px) {
+  .signin-container {
+    margin: 3rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    height: unset;
+  }
+
+  .signin-card {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: white;
+    z-index: 2;
+    transform: translateY(-5rem);
+  }
+
+  .input-wrapper input{
+    font-size: 1rem;
+  }
+
+  .signin-btn {
+    font-size: 1rem;
+    padding: .5rem 2rem;
+  }
+
+  .reset-pass-btn{
+    font-size: .8rem;
+  }
+}

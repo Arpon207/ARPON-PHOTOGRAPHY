@@ -1,0 +1,110 @@
+.packages {
+  /* background: url(/src/images/background-2.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position-y: 50px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.473);
+    padding: 2rem 0;
+    color: white; */
+    margin: 0 0 5rem 0;
+}
+
+.packages h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.packages-card-container {
+  width: 80%;
+  margin: 0 auto 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.package-card {
+  position: relative;
+  background-color: orange;
+  padding: 2rem;
+  border-radius: 33px;
+  background: #ffffff;
+  box-shadow: 48px 48px 100px #ebebeb, -48px -48px 100px #ffffff;
+}
+
+.package-title {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.package-price {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.middle-card {
+  background-color: rgba(0, 0, 0, 0.11);
+  padding: 2rem 0;
+}
+
+.package-card ul {
+  width: 60%;
+  text-align: left;
+  list-style: none;
+  margin: 0 auto 3rem;
+}
+
+.package-card ul li {
+  margin: 1rem 0;
+  gap: 0.5rem;
+  display: grid;
+  grid-template-columns: 5% 95%;
+  align-items: baseline;
+}
+
+.list-icon {
+  transform: translateY(0.15rem);
+  margin-right: 0.5rem;
+}
+
+.package-card button {
+  font-size: 1.2rem;
+  display: block;
+  margin: 2rem auto 0;
+  padding: 0.5rem 1.5rem;
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+
+.package-card button:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+/*<--------------Media Queries (Small-Devices)----------------->*/
+
+@media screen and (max-width: 668px) {
+  .packages-card-container {
+    width: 90%;
+    margin: 0 auto 3rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+
+  .middle-card {
+    background-color: rgba(0, 0, 0, 0.11);
+    padding: 2rem 0;
+  }
+}
